@@ -1,0 +1,40 @@
+@import "lesshat";
+
+.navbar {
+  background-color: lightgrey;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid purple;
+
+  .group {
+    .left {
+      flex-grow: 2;
+    }
+
+    .right {
+      flex-grow: 1;
+    }
+  }
+
+  .navbar-item {
+    background-color: blue;
+    display: inline-block;
+    height: 30px;
+    width: 50px;
+    vertical-align: middle;
+
+    &.logo {
+      background-color: orange;
+      height: 30px;
+      width: 70px;
+      margin: 10px;
+    }
+
+    &.icon {
+      width: 30px;
+    }
+  }
+}
